@@ -1,6 +1,20 @@
-/*вывести на экран квадратик из звездочек, размер квадрата задается юзером.*/
 #include <iostream>
 void star(int b)
+{
+  int a = 0, c = 0;
+  while (c < b)
+  {
+      while (a < b)
+      {
+          std::cout << "* ";
+          a++;
+      }
+      std::cout << std::endl;
+      c++;
+      a = 0;
+  }
+}
+/*void star(int b)
 {
   for(int a = 0; a < b; a++)
   {
@@ -8,7 +22,7 @@ void star(int b)
         std::cout << "* ";
     std::cout << std::endl;
   }
-}
+}*/
 int main()
 {
     int b;
